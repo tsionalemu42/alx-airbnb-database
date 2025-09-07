@@ -1,4 +1,6 @@
-This directory contains advanced SQL scripts demonstrating the use of subqueries (correlated and non-correlated) for the Airbnb database.
-# Database Advanced Scripts
+# Aggregations and Window Functions
 
-This directory contains SQL scripts for practicing aggregations and window functions on the Airbnb database.
+This file contains SQL queries for the Airbnb database:
+
+1. Count total bookings per user.
+2. Rank properties based on the total number of bookings using a window function (ROW_NUMBER).
