@@ -26,6 +26,20 @@ LEFT JOIN reviews r
 
 -- 3. FULL OUTER JOIN: Retrieve all users and all bookings, even if a user has no booking or a booking is not linked to a user
 -- Note: MySQL does not support FULL OUTER JOIN natively. Using UNION of LEFT and RIGHT JOIN as a workaround
+-- Retrieve all properties and their reviews, including properties with no reviews
+SELECT 
+    p.property_id,
+    p.property_name,
+    r.review_id,
+    r.user_id,
+    r.rating,
+    r.comment
+FROM 
+    properties p
+LEFT JOIN 
+    reviews r
+ON 
+    p.property_id = r.property_id;
 SELECT 
     u.user_id,
     u.username,
