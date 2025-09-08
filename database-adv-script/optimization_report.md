@@ -1,10 +1,11 @@
 # Query Optimization Report
+# Optimization Report for Complex Queries
 
 ## Objective
-Refactor complex queries to improve database performance.
+Optimize complex queries to improve performance in Airbnb database.
 
 ## Initial Query
-The initial query retrieved all columns from bookings, users, properties, and payments:
+The initial query retrieves all bookings along with user, property, and payment details:
 
 ```sql
 SELECT 
